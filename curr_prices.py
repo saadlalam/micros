@@ -6,7 +6,7 @@ just needs a small tweak)
 Author :Saadlalam
 Contact : saad.lalaoui.lamdegheri@gmail.com
 --------
-This is for educational purpose only.
+This is for educational purpose only. 
 Please note that it is illegal to spam requests if the web app does not allow so.
 '''
 URL = "https://finance.google.com/finance?q="
