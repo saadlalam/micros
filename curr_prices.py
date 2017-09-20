@@ -14,15 +14,15 @@ URL = "https://finance.google.com/finance?q="
 def live_quotes(quote, base):
     
     result = dict()
-    page = requests.get(URL+str(base.upper())+str(quote.upper()))
+    page = requests.get(URL+base+quote)
     data = page.content
     s = bs(data, 'html.parser')
     s = s.find('span', attrs={'class': 'bld'})
     s = s.text.split(' ')
 
     result = {
-        'base' : base,
-        'quote': quote,
+        'base' : base.upper(),
+        'quote': quote.upper(),
         'bid': s[0]
     }
     return result
