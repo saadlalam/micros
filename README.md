@@ -25,8 +25,12 @@ A dict object :
 }
 
 Usage example:
+
 call:
 live_quotes('eur','usd')
+
 result:
 {'base': 'usd', 'quote': 'eur', 'bid': '0.8327'}
+
+
 ----------------------------------------------------------------------------------------------
