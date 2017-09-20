@@ -26,7 +26,7 @@ A dict object :
 
 Usage example:
 
->>>live_quotes('eur','usd')
+##live_quotes('eur','usd')
 
-{'base': 'usd', 'quote': 'eur', 'bid': '0.8327'}
+##{'base': 'usd', 'quote': 'eur', 'bid': '0.8327'}
 ----------------------------------------------------------------------------------------------
