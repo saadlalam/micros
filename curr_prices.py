@@ -1,6 +1,4 @@
-import json
 import requests
-import time
 from bs4 import BeautifulSoup as bs
 '''
 A small crawler to get currency live prices. (it works for other tickers,
@@ -29,4 +27,4 @@ def live_quotes(quote, base):
     }
     return result
 
-
+#print(live_quotes('usd','eur'))
