@@ -1,11 +1,11 @@
-## Micros
+## 
 
-This folder contains microscripts for single task handling.
------------------------------------------------------------------------------------------
+Live currency fetcher is a micro script that scraps google finance page and retrieves live prices of a given currency/currency
+---------------------------------------------------------------------------------------------------------------------
 ### curr_prices
 
 A one function tool to scrap live currency prices directly from google finance page.
-
+-In the example below, we are retrieving the price of EUR based on the current USD value.
 Importations:
 
 - requests
