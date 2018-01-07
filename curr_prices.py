@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as bs
 '''
-A small crawler to get currency live prices. (it works for other tickers,
+A small scrapper to get currency live prices. (it works for other tickers,
 just needs a small tweak)
 Author :Saadlalam
 Contact : saad.lalaoui.lamdegheri@gmail.com 
@@ -26,5 +26,7 @@ def live_quotes(quote, base):
         'bid': s[0]
     }
     return result
+#WHOOAA ! Unlike Javascript, this Python object above doesn't raise any circular structure error ;)
 
+#Usage :
 #print(live_quotes('usd','eur'))
