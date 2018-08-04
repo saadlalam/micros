@@ -13,7 +13,7 @@ URL = "https://finance.google.com/finance?q="
 
 def live_quotes(quote, base):
     
-    result = dict()
+    result = {}
     page = requests.get(URL+base+quote)
     data = page.content
     s = bs(data, 'html.parser')
