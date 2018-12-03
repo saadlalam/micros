@@ -11,7 +11,7 @@ URL = "https://finance.google.com/finance?q="
 def live_quotes(quote, base):
     
     result = {}
-    page = requests.get(URL+base+quote)
+    page = requests.get(URL+base+'+to+'+quote)
     data = page.content
     s = bs(data, 'html.parser')
     s = s.find('span', attrs={'class': 'bld'})
@@ -23,7 +23,7 @@ def live_quotes(quote, base):
         'bid': s[0]
     }
     return result
-#WHOOAA ! Unlike Javascript, this Python object above doesn't raise any circular structure error ;)
+# raise no circular structure error plz
 
 #Usage :
 #print(live_quotes('usd','eur'))
