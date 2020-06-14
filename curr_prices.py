@@ -23,7 +23,5 @@ def live_quotes(quote, base):
         'bid': s[0]
     }
     return result
-# raise no circular structure error plz
 
-#Usage :
 #print(live_quotes('usd','eur'))
